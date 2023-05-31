@@ -28,5 +28,5 @@ Daha sonra DockerHub a push edildi. [izzeddincelik/sample_app:latest]([url](http
 - Servis objesi selector'ü deployment objesi olacak şekilde **LoadBalancer** tipinde ayağa kaldırılması,
 - Minikube tunnel aktif edilerek **ClusterIP -> External_IP** yönlendirmesi yapılması,
 - Bu sayede **http://{{EXTERNAL_IP}}:{{PORT}}/WeatherForecast** olacak şekilde erişim sağlanması,
-- Bu erişim curl ile sh'ın sonunda çıktı şeklinde kontrol edilmesi,
-- Ingress objesi oluşturularak dışardan **80(HTTP)** portu üzerinden any erişim sağlanabilmesi gibi adımlar olarak söylenebilir.
+- Ingress objesi oluşturularak dışardan **80(HTTP)** portu üzerinden any erişim sağlanabilmesi,
+- Bu erişim curl ile sh'ın sonunda çıktı şeklinde kontrol edilmesi şeklinde söylenebilir.
