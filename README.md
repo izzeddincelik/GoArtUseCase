@@ -10,9 +10,20 @@ This repo used for GoArt use case. Then it's open source and copyright-free for 
 Gerekli Ayarlamalar
 ---
 
-**Minikube** ayağa kaldırıldı. **VSCode** kullanıldı. **Git** ve **Docker Desktop** yüklendi. **HyperV Integrated** çalışacak şekilde ayarlandı.
+- **Minikube** up durumda olmalı. (**> minikube start**)
+- **VSCode** kullanabilirsiniz. 
+- **Git** ve **Docker Desktop** yüklenmeli. 
+- **HyperV Integrated** çalışacak şekilde ayarlanabilir.
+
+Kurulum
+---
+
+**Windows için** -> **Git Bash ya da WSL2** üzerinden **./one-click-install.sh** olarak çağırmanız yeterli olacaktır.
+
+**Unix için** -> Repoyu indirdikten sonra **./one-click-install.sh** çalıştırmanız yeterli olacaktır.
 
 ---
+
 Öncelikle, uygulama **troubleshooting** edilerek çalışmaya engel olabilecek ifadeler tespit edildi.
 
 .csproj dosyasının ismi ile dll uyumsuzluğu **tespit** edildi ve gerekli düzeltmeler yapıldı.
@@ -21,7 +32,7 @@ Repo **git clone** olarak github üzerinden indirildi ve ilgili directory altın
 
 **Dockerfile** oluşturuldu ve build edildi.
 
-Daha sonra DockerHub a push edildi. [izzeddincelik/sample_app:latest](https://hub.docker.com/layers/izzeddincelik/sample_app/latest/images/sha256-b8f98060559f60b16fb3a885acc262fe026200f49c3ac4488b32a27af102ac15?context=repo)
+Daha sonra DockerHub a push edildi. [izzeddincelik/sample_app:latest](https://hub.docker.com/layers/izzeddincelik/sample_app/latest/images/sha256-b8f98060559f60b16fb3a885acc262fe026200f49c3ac4488b32a27af102ac15?context=explore)
 
 **k8s-goart-definition-file.yml** yaml dosyası oluşturuldu. Detaylı olarak;
 
@@ -37,7 +48,18 @@ Daha sonra DockerHub a push edildi. [izzeddincelik/sample_app:latest](https://hu
 Required Settings
 ---
 
-**Minikube** has been started. **VSCode** has been used. **Git** and **Docker Desktop** has been installed. **HyperV Integrated** has been configured to work.
+- **Minikube** should be running. (**> minikube start**)
+- You can use **VSCode**.
+- **Git and Docker Desktop** should be installed.
+- **HyperV Integration** can be set to work.
+
+---
+Installation
+---
+
+**For Windows** -> After downloading the repo, simply run **./one-click-install.sh** via **Git Bash** or **WSL2**.
+
+**For Unix** -> After downloading the repo, just run **./one-click-install.sh**.
 
 ---
 First, the application was **troubleshooted** to identify any statements that could prevent it from running.
@@ -48,7 +70,7 @@ The repository was cloned from GitHub using 'git clone' and the relevant directo
 
 A Dockerfile was created and built.
 
-Then, it was pushed to DockerHub: [izzeddincelik/sample_app:latest](https://hub.docker.com/layers/izzeddincelik/sample_app/latest/images/sha256-b8f98060559f60b16fb3a885acc262fe026200f49c3ac4488b32a27af102ac15?context=repo)
+Then, it was pushed to DockerHub: [izzeddincelik/sample_app:latest](https://hub.docker.com/layers/izzeddincelik/sample_app/latest/images/sha256-b8f98060559f60b16fb3a885acc262fe026200f49c3ac4488b32a27af102ac15?context=explore)
 
 A yaml file named **k8s-goart-definition-file.yml** was created. In detail:
 
